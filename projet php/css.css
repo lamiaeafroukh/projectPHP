@@ -76,15 +76,16 @@ position: absolute;
   
 }/* partie de sous menu pour chaque categories*/
 #books {
-    width: 0;
-    position:absolute;
-    height: 40%;
-    top: 15%;
-    left: 5%;
-    background-color: beige;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+  width: 0;
+  position:absolute;
+  height: 61%;
+  top: 13%;
+  left: 5%;
+  background-color: gray;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin-top: 1%;
   }
   #food  {
     width: 0;
@@ -203,4 +204,32 @@ height: auto;
   position: absolute;
   top: 15px;
   left: 42%;
+}
+/* biblio*/
+#books h2{
+  
+  position: absolute;
+  top: 15px;
+  left: 40%;
+}
+.row .col-md-6.ssmenu{
+  background-color: azure;
+  border-radius:2%;
+  margin: 3% 5% 5% 12%;
+  width: 30%;
+ padding-left: 2%;
+   
+}
+.row .col-md-6.ssmenu  li {
+  list-style: none;
+
+  
+
+}
+.row .col-md-6.ssmenu a{
+  text-decoration: none;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: aquamarine;
+
+  
 }
