@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+   
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>   
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link  href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet">        <!--Link OF BOOTSRAP-->   
+       <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   -->  
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <script src="js.js"></script>        
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img  id="logo"src="logoo.png">
+       <div class="search-box">
+       
+          <img src="loupe.png">
+            <input type="search" placeholder="search">
+       
+       
+       </div>
+    <div class="phone">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+       <strong> +212 45689932</strong>
+       
+
+    </div>
+    
+         <a href=""> <i class="fa fa-user-o" aria-hidden="true"></i></a> 
+       <a href=""> <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+         <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i> </a>
+      
+    </nav>
+ 
+    <div class="category">
+         <a> <span class="material-icons-round active" > menu </span></a>
+          <a  class="openbtn" onmouseover="openNav0()">  <span class="material-icons-round">fastfood</span></i></a>
+          <a  onmouseover="openNav1()"> <span class="material-icons-round">checkroom</span></a> 
+         <a onmouseover="openNav2()"><span class="material-icons-round">menu_book</span></a> 
+          <a onmouseover="openNav3()"><span class="material-icons-round" >electrical_services</span></a>
+          <a onmouseover="openNav4()"> <span class="material-icons-round" >chair</span></a> 
+       
+    </div>
+    
+<!--Sous menu de chaque categories-->
+    <div  onmouseleave="closeNav0()" id="food"> 
+     <p>Food</p>
+     </div>
+    <div  onmouseleave="closeNav1()" id="Vetement">
+     <p>Vetement</p>
+    </div>
+    <div  onmouseleave="closeNav2()" id="books">
+     <p>biblio</p>
+    </div>
+    <div  onmouseleave="closeNav3()" id="electro">
+      <p>electro</p>
+    </div>
+    <div  onmouseleave="closeNav4()" id="home">
+      <h2>Maison</h2>
+      <div class="row ">
+        <div class="col-md-4 ssmenu ">
+         <a href=""> <h4> Cuisine </h4></a>
+         <ul>
+          <li>Arts De La Table</li>
+          <li>Accessoires</li>
+          <li>Gadgets</li>
+          <li>Machines</li>
+        </ul>
+        </div>
+        <div class="col-md-4 ssmenu">
+          <a href=""> <h4> Décoration </h4></a>
+          <ul>
+            <li>Décoration murale</li>
+            <li>Luminaires et Éclairage</li>
+            <li> Miroirs</li>
+            <li> Meubles décoratifs</li>
+          
+
+          </ul>
+        </div><div class="col-md-4 ssmenu">
+          <a href=""> <h4> Rangements </h4></a>
+          <ul>
+            <li>Salle de bain</li>
+            <li>Cuisine</li>
+            <li>Chambre à coucher</li>
+            <li> Salon</li>
+
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 ssmenu">
+          <a href=""> <h4> Chambres </h4></a>
+          <ul>
+            <li>Lits</li>
+            <li>Matelas</li>
+            <li>Couvertures</li>
+            <li>Rideaux</li>
+            
+          </ul>
+        </div>
+        <div class="col-md-4 ssmenu">
+          <a href=""> <h4> Salon </h4></a>
+          <ul>
+            <li>Canapès</li>
+            <li>Tables</li>
+            <li>Chaises</li>
+            <li>Tapis</li>
+
+          </ul>
+        </div><div class="col-md-4 ssmenu">
+          <a href=""> <h4> Jardin </h4></a>
+          <ul>
+            <li>Fournitures</li>
+            <li>Plantes</li>
+            <li>Accessoires</li>
+            <li>Barbecues</li>
+            
+
+          </ul>
+        </div>
+       
+      </div>
+    </div>
+ 
+  <div  class="class-md-4"> <!--partie  de pub-->
+   
+  </div>
+
+<!--nferak mabin sous menu o pub b bootstraap-->
+<!--partie de produits-->
+
+<section class="container">
+  <div class="row">
+      <div class="col-md-4">
+          
+          <img src="logo.png">
+           <div class="infoprod">
+            <h5 class="title">Titre</h5>
+          <h6 class="prix">200 DH </h6>
+          <span class="material-icons-round">star_rate</span>
+          <span class="material-icons-round">star_border</span>
+          <span class="material-icons-round">add_shopping_cart</span>
+         </div>
+        </div>
+      <div class="col-md-4">
+       
+         <img src="logo.png">
+        
+        </div>
+
+      <div class="col-md-4"> 
+        
+        <img src="logo.png">
+        
+         
+      </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+      <div class="col-md-4">
+          
+          <img src="logo.png">
+         
+        </div>
+      <div class="col-md-4">
+         
+         <img src="logo.png">
+         
+        
+        </div>
+
+      <div class="col-md-4"> 
+       
+        <img src="logo.png">
+          
+      </div>
+  </div>
+</section>
+
+<script>
+    </script>
+       
+</body>
+</html>
