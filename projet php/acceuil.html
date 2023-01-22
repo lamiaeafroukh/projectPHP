@@ -12,6 +12,7 @@
         <link  href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet">        <!--Link OF BOOTSRAP-->   
        <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   -->  
        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+     
         <script src="js.js"></script>        
     <title>Document</title>
 </head>
@@ -136,6 +137,31 @@
   </div>
 
 <!--nferak mabin sous menu o pub b bootstraap-->
+<!--partie de publicite-->
+<div class="slide-pub" style="max-width:500px">
+  <img class="mySlides image1" src="image1.jpg"  >
+  <img class="mySlides" src="image2.jpeg" style="width:160%">
+  <img class="mySlides" src="image3.jpeg" style="width:150%">
+  <img class="mySlides" src="image5.png" style="width:150%">
+  <img class="mySlides" src="image6.jpeg" style="height:50%">
+</div>
+<!--script de image de pub (slideshow)-->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
 <!--partie de produits-->
 
 <section class="container">
