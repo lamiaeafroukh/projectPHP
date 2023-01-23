@@ -1,23 +1,31 @@
 .search-box{
- 
-width:400px;
-display: flex;
+
+width:40%;
+display: inline;
 align-items: center;
-padding: 0px 15px;
+padding: 0px 10px;
 
 }
-.search-box img{
- width :15px;
- position: relative;
- left: 94%;
 
-}
 .search-box input{
-    width: 400%;
-    padding: 2%;
+  position: relative;
+  background:white;
+  width: 88%;
+  padding: 2%;
  border-radius: 40px;
  border: none;
  outline: none;
+}
+.search-box button{
+  background: none;
+  border: none;
+}
+.search-box input:hover{
+  background-image: linear-gradient(to right, beige, rgb(233, 151, 164));
+}
+.search-box button:hover{
+  color:rgb(223, 91, 113);
+
 }
 nav{
     width: auto;
@@ -26,6 +34,7 @@ nav{
     align-items: center;
     position: sticky;
     top: 0%;
+   
 
 }
 nav a{
@@ -34,10 +43,11 @@ font-size: 180%;
     color: black;
 }
 #logo{
-  width: 13%;
+   width: 13%;
 height: 5%;
 margin-right:15% ;
 margin-left: 3%;
+
 }
 .phone{
     margin: 0% 5%;
@@ -49,6 +59,26 @@ margin-left: 3%;
 .phone strong{
 position: absolute;
   top:6%;
+}
+
+.nav1{
+  position: relative;
+  left:5%;
+  display: flex;
+ 
+}
+.nav1 a{
+   margin-left: 30%;
+}
+.nav1 a i{
+ font-size: 120%;
+}
+#comment{
+  position: relative;
+  top: 15%;
+}
+.nav1 a i:hover{
+  color:rgb(223, 91, 113);
 }
 .menu {
     font-size: 200%;  
@@ -76,6 +106,7 @@ position: absolute;
   
 }/* partie de sous menu pour chaque categories*/
 #books {
+    cursor: pointer;
     width: 0;
     position:absolute;
     height: 40%;
@@ -89,7 +120,7 @@ position: absolute;
   #food  {
     width: 0;
     position:absolute;
-
+    cursor: pointer;
     height: 40%;
     top: 15%;
     left: 5%;
@@ -99,6 +130,7 @@ position: absolute;
     padding-top: 60px;
   }
   #biblio {
+    cursor: pointer;
     width: 0;
     position:absolute;
     height: 40%;
@@ -112,7 +144,7 @@ position: absolute;
   #Vetement {
     width: 0;
     position:absolute;
-
+    cursor: pointer;
     height: 40%;
     top: 15%;
     left: 5%;
@@ -132,7 +164,7 @@ position: absolute;
     transition: 0.5s;
     padding-top: 60px;
     margin-top: 1%;
-    
+    cursor: pointer;
   }
   #electro {
     width: 0;
@@ -140,28 +172,19 @@ position: absolute;
     height: 30%;
     top: 15%;
     left: 5%;
+    cursor: pointer;
     background-color: beige;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
   }
-  .category a:hover {
-    color: #f1f1f1;
+  .category a span:hover {
+  color:rgb(223, 91, 113);
+    cursor: pointer;
 
   }
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    color:black;
-    padding: 10px 15px;
-    border: none;
-  }
-.category a span.active{
-    background-color: white;
-    color: black;
-    border-radius: 25% 0% 0% 25%;
  
-  }
+
 
   /* partie de publicite*/
   .slide-pub{
