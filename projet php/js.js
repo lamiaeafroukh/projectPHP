@@ -49,6 +49,9 @@ function openNav0() {
   function closeNav4() {
     document.getElementById("home").style.width="0%";
   }
-
-  
-
+// partie de menu 
+  function openmenu(){
+    document.getElementById("menu").style.width="15%";
+  } function closemenu(){
+    document.getElementById("menu").style.width="7%";
+  }

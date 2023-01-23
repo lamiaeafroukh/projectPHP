@@ -43,30 +43,48 @@
       </div>
     </nav>
  
-    <div class="category">
-         <a> <span class="material-icons-round " > menu </span></a>
-          <a  onmouseover="openNav0()">  <span class="material-icons-round">fastfood</span></a>
-          <a  onmouseover="openNav1()"> <span class="material-icons-round">checkroom</span></a> 
-         <a onmouseover="openNav2()"><span class="material-icons-round">menu_book</span></a> 
-          <a onmouseover="openNav3()"><span class="material-icons-round" >electrical_services</span></a>
-          <a onmouseover="openNav4()"> <span class="material-icons-round" >chair</span></a> 
-       
+    <div class="category" id="menu" onmouseenter="openmenu()" onmouseleave="closemenu()">
+      <ul>
+       <li> <a> 
+          <i class="material-icons-round  " > menu </i>
+        </a></li> 
+        <li>  <a  onmouseover="openNav0()"> 
+             <i class="material-icons-round">fastfood</i>
+              <span>Food</span>
+            </a></li>
+        <li>  <a  onmouseover="openNav1()"> 
+            <i class="material-icons-round">checkroom</i>
+              <span>Vêtements</span>
+          </a> </li>
+        <li><a onmouseover="openNav2()">
+          <i class="material-icons-round">menu_book</i>
+          <span>Biblothèque</span>
+        </a> </li> 
+         <li> <a onmouseover="openNav3()">
+            <i class="material-icons-round" >electrical_services</i>
+            <span>Élèctrique</span>
+          </a></li>
+         <li><a onmouseover="openNav4()"> 
+            <i class="material-icons-round" >chair</i>
+            <span>Home</span>
+          </a> </li> 
+       </ul>
     </div>
     
 <!--Sous menu de chaque categories-->
-    <div  onmouseleave="closeNav0()" id="food"> 
+    <div onpointerleave="closemenu()" onmouseenter="openmenu()" onmouseleave="closeNav0()" id="food"> 
      <p>Food</p>
      </div>
-    <div  onmouseleave="closeNav1()" id="Vetement">
+    <div onpointerleave="closemenu()" onmouseenter="openmenu()" onmouseleave="closeNav1()" id="Vetement">
      <p>Vetement</p>
     </div>
-    <div  onmouseleave="closeNav2()" id="books">
+    <div onpointerleave="closemenu()" onmouseenter="openmenu()" onmouseleave="closeNav2()" id="books">
      <p>biblio</p>
     </div>
-    <div  onmouseleave="closeNav3()" id="electro">
+    <div onpointerleave="closemenu()" onmouseenter="openmenu()" onmouseleave="closeNav3()" id="electro">
       <p>electro</p>
     </div>
-    <div  onmouseleave="closeNav4()" id="home">
+    <div onpointerleave="closemenu()" onpointerleave="closemenu()"onmouseenter="openmenu()" onmouseleave="closeNav4()" id="home">
       <h2>Maison</h2>
       <div class="row ">
         <div class="col-md-4 ssmenu ">
@@ -140,7 +158,7 @@
    
   </div>
 
-<!--nferak mabin sous menu o pub b bootstraap-->
+
 <!--partie de publicite-->
 <div class="slide-pub" style="max-width:500px">
  

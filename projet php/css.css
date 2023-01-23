@@ -35,8 +35,8 @@ nav{
     align-items: center;
     position: sticky;
     top: 0%;
-   
-
+   z-index: 1;
+   box-shadow: 0px 2px 8px rgba(112, 110, 110, 0.3)
 }
 nav a{
 margin-left: 4%;
@@ -82,38 +82,47 @@ position: absolute;
 .nav1 a i:hover{
   color:rgb(223, 91, 113);
 }
-.menu {
-    font-size: 200%;  
-    margin-left:1%; 
-}
-.category li{
-    list-style: none;
-    font-size: 180%;
-      margin-top:3%;
-}
+
+/* partie de menu vertical*/
 .category{
-    margin: 0% 0 0 0;
-    width:4%;
+    left: 0;
+    width: 7%;
+    overflow: hidden;
    background-color: beige;
+   box-shadow: 4px 7px 8px rgba(112, 110, 110, 0.3)
    
 }
-.category a span {
- padding: 5% ;
-    display: block;
-  text-align: center;
- margin-left: 0%;
+.category li{
+  list-style: none;
+  position: relative;
+  display: table;
+  width: 300px;
+  padding: 10px;
+  background: beige;
+}
+.category a i {
   transition: all 0.3s ease;
-  font-size:220%;
-  margin-bottom:80%;
-  
-}/* partie de sous menu pour chaque categories*/
+  margin-bottom: 20%;
+  font-size: 220%;
+}
+ .category a span {
+   margin-left: 9%;
+   
+  }
+  /* ou le menu vertical ouvre pour montrer le nom de chaque categories*/
+  .category:hover{
+  width: 15%;
+  }
+ 
+/* partie de sous menu pour chaque categories*/
 #books {
     cursor: pointer;
     width: 0;
+    z-index: 1;
     position:absolute;
     height: 40%;
     top: 15%;
-    left: 5%;
+    left: 15%;
     background-color: beige;
     overflow-x: hidden;
     transition: 0.5s;
@@ -125,31 +134,20 @@ position: absolute;
     cursor: pointer;
     height: 40%;
     top: 15%;
-    left: 5%;
+    left: 15%;
     background-color:beige;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
   }
-  #biblio {
-    cursor: pointer;
-    width: 0;
-    position:absolute;
-    height: 40%;
-    top: 15%;
-    left: 5%;
-    background-color: beige;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
+ 
   #Vetement {
     width: 0;
     position:absolute;
     cursor: pointer;
     height: 40%;
     top: 15%;
-    left: 5%;
+    left: 15%;
     background-color: beige;
     overflow-x: hidden;
     transition: 0.5s;
@@ -160,7 +158,7 @@ position: absolute;
     position:absolute;
     height: 72%;
     top: 15%;
-    left: 5%;
+    left: 15%;
     background-color: gray;
     overflow-x: hidden;
     transition: 0.5s;
@@ -173,18 +171,14 @@ position: absolute;
     position:absolute;
     height: 30%;
     top: 15%;
-    left: 5%;
+    left: 15%;
     cursor: pointer;
     background-color: beige;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
   }
-  .category a span:hover {
-  color:rgb(223, 91, 113);
-    cursor: pointer;
-
-  }
+ 
  
 
 
