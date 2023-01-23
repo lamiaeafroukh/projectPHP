@@ -4,7 +4,7 @@ width:40%;
 display: inline;
 align-items: center;
 padding: 0px 10px;
-
+justify-content: center;
 }
 
 .search-box input{
@@ -48,7 +48,7 @@ font-size: 180%;
 height: 5%;
 margin-right:15% ;
 margin-left: 3%;
-
+justify-content: flex-start;
 }
 .phone{
     margin: 0% 5%;
@@ -66,7 +66,8 @@ position: absolute;
   position: relative;
   left:5%;
   display: flex;
- 
+ justify-content: flex-end;
+ margin-left: 12%;
 }
 .nav1 a{
    margin-left: 30%;
@@ -191,11 +192,9 @@ position: absolute;
   .slide-pub{
    z-index: -2;
     position: absolute;
-    top: 20%;
+    top: 12%;
     left: 8%;
 }
-
-
   /*partie de produits*/
 .row img{
 width:40%;
