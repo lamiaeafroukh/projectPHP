@@ -25,7 +25,8 @@ padding: 0px 10px;
 }
 .search-box button:hover{
   color:rgb(223, 91, 113);
-
+  background: rgb(201, 196, 196) ;
+  border-radius: 50%;
 }
 nav{
     width: auto;
