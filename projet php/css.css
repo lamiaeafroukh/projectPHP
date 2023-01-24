@@ -1,6 +1,6 @@
 body{
   background-image:url(backgrd.png) ;
-  background-size: 100% 79%;
+  background-size: 100% 100%;
   background-repeat: no-repeat; ;
 }
 .search-box{
@@ -199,21 +199,87 @@ position: absolute;
     left: 8%;
 }
   /*partie de produits*/
-.row img{
-width:40%;
-height: 50%;
+  .prod{
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 0;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-bottom: 2%;
+    
 
   }
+  .all h1{
+    font-family: fantasy;
+    margin-left: 6%;
+  }
 
-.row .col-md-4{
-background-color: rgb(158, 158, 96);
-margin: 5px 0px;
-border-radius: 5%;
-height: auto;
+.container .col-md-4{
 
-
+flex:1 1 30rem;
+box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+border-radius: .5rem;
+border: .1rem solid rgba(0,0,0,0.1);
+position: relative;
 
 }
+.container  .col-md-4 .image{
+  position: relative;
+  text-align: center;
+  padding-top: 1.5rem;
+  overflow: hidden;
+  width: 13.55rem;
+  
+}
+.container  .col-md-4 .image img{
+  height: 12rem;
+  
+}
+.container .col-md-4:hover .image img{
+  transform: scale(1.1);
+}
+.container  .col-md-4 .image .icons{
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+.container  .col-md-4:hover .image .icons{
+  bottom: 0;
+}
+.container  .col-md-4 .image .icons a{
+  height: 2.5rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  width: 50%;
+  background:pink;
+  color: white;
+}
+.container  .col-md-4 .image .icons a:hover{
+  background: black;
+}
+.container  .col-md-4 .infoprod{
+ 
+}
+.container  .col-md-4 .infoprod h5 a{
+ color: #333;
+}
+.container  .col-md-4 .infoprod h5 a:hover{
+  color: blue;
+}
+.container  .col-md-4 .infoprod .prix{
+  font-weight: bolder;
+}
+.container  .col-md-4 .infoprod .prix span{
+  float: right;
+  
+}
+/*partie des sous menus*/
 .row .col-md-4.ssmenu{
   background-color: white;
   border-radius:2%;
