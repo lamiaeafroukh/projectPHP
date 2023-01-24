@@ -55,3 +55,23 @@ function openNav0() {
   } function closemenu(){
     document.getElementById("menu").style.width="7%";
   }
+// java de partie de login 
+function connexion(){
+  document.getElementById("login").style.display="block";
+
+}
+function closelogin(){
+  document.getElementById("login").style.display="none";
+}
+function opensign(){
+  document.getElementById("login").style.display="none";
+  document.getElementById("signup").style.display="block";
+}
+function openlogin(){
+  document.getElementById("login").style.display="block";
+  document.getElementById("signup").style.display="none";
+
+}
+function closesign(){
+  document.getElementById("signup").style.display="none";
+}

@@ -13,11 +13,12 @@
        <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   -->  
        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
      
         <script src="js.js"></script>        
     <title>Document</title>
 </head>
-<body>
+<body >
     <nav>
         <img  id="logo"src="logo.png">
        
@@ -28,15 +29,9 @@
        </form>
       </div>
        
-    <!--  </div>
-    <div class="phone">
-        <i class="fa fa-phone" aria-hidden="true"></i>
-       <strong> +212 45689932</strong>
-       
-
-    </div>--> 
+   
     <div class="nav1">
-         <a href=""><i class="fa fa-user-o" aria-hidden="true"></i></a> 
+         <a onclick="connexion()"><i class="fa fa-user-o" aria-hidden="true"></i></a> 
        <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
          <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i> </a>
          <a href=""><i id="comment" class="material-symbols-rounded"> comment </i></a>
@@ -159,19 +154,19 @@
   </div>
 
 
-<!--partie de publicite-->
+<!--partie de publicite
 <div class="slide-pub" style="max-width:500px">
  
   <img class="mySlides" src="solde.png" style="width:160%">
   <img class="mySlides" src="solde0.png" style="width:160%">
   <img class="mySlides" src="sold3.png" style="width:160%">
-  <!--<img class="mySlides image1" src="image1.jpg"  >
+  //<img class="mySlides image1" src="image1.jpg"  >
   <img class="mySlides" src="image2.jpeg" style="width:160%">
   <img class="mySlides" src="image3.jpeg" style="width:150%">
   <img class="mySlides" src="image5.png" style="width:150%">
   <img class="mySlides" src="image6.jpeg" style="height:50%">
- --></div>
-<!--script de image de pub (slideshow)-->
+ //</div>
+//script de image de pub (slideshow)//
 <script>
 var myIndex = 0;
 carousel();
@@ -187,7 +182,7 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 5000); // Change image every 5 seconds
 }
-</script>
+</script>-->
 <!--partie de produits-->
 
 <section class="container">
@@ -240,6 +235,39 @@ function carousel() {
   </div>
 </section>
 
-<h1>salam1546jghjhkl</h1>       
+ 
+     <div class="login animate"id="login">
+        <h1>Login</h1>
+        <button class="btnclose" onclick="closelogin()"> <span class="material-symbols-outlined"> close</span></button>
+   
+        <form action="">
+
+        <label for="username" id="username" ><i class="material-symbols-outlined"> person </i></label>
+        <input type="text" placeholder="username" name="username">
+        <br><br>
+        <label for="password" id="password" ><i class="material-symbols-outlined">lock</i></label>
+        <input type="password" placeholder="********" name="password">
+        <br>
+        <br>
+        <button type="submit" id="btnlogin">Login</button>
+        </form>
+        <p>vous n'êtes pas membre avec nous? <a ¡ onclick="opensign()">SignUp</a></p>
+    </div>
+    <div class="signup animate" id="signup">
+    <button class="btnback" onclick="openlogin()"><span class="material-symbols-outlined">arrow_back</span></button>
+       <button class="btnclose" onclick="closesign()"> <span class="material-symbols-outlined"> close</span></button>
+        <h1>Sign Up</h1>
+        <form action="">
+            <input type="text" placeholder="Nom" name="nom">
+            <input type="text" placeholder="Prenom" name="Prenom">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Numéro de Telephone">
+            <input type="date">
+            <button type="submit" id="btnsignup">Sign Up</button>
+        </form>
+       <p> Si vous cliquez sur <strong>Sign Up</strong> vous acceptez notre conditions et la politique de confidentialité</p>
+
+    </div>
+
 </body>
 </html>

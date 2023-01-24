@@ -1,3 +1,8 @@
+body{
+  background-image:url(backgrd.png) ;
+  background-size: 100% 79%;
+  background-repeat: no-repeat; ;
+}
 .search-box{
 
 width:40%;
@@ -21,22 +26,23 @@ justify-content: center;
   border: none;
 }
 .search-box input:hover{
-  background-image: linear-gradient(to right, beige, rgb(233, 151, 164));
+  background-image: linear-gradient(to right, beige, rgba(255, 166, 0, 0.684));
+  color: black;
 }
 .search-box button:hover{
-  color:rgb(223, 91, 113);
+  color:orange;
   background: rgb(201, 196, 196) ;
   border-radius: 50%;
 }
 nav{
     width: auto;
-    background-color: beige;
+    background-color: white;
     display:flex;
     align-items: center;
     position: sticky;
     top: 0%;
    z-index: 1;
-   box-shadow: 0px 2px 8px rgba(112, 110, 110, 0.3)
+  
 }
 nav a{
 margin-left: 4%;
@@ -80,7 +86,7 @@ position: absolute;
   top: 15%;
 }
 .nav1 a i:hover{
-  color:rgb(223, 91, 113);
+  color:orange;
 }
 
 /* partie de menu vertical*/
@@ -88,9 +94,9 @@ position: absolute;
     left: 0;
     width: 7%;
     overflow: hidden;
-   background-color: beige;
-   box-shadow: 4px 7px 8px rgba(112, 110, 110, 0.3)
-   
+    height: auto;
+   background-color: white;
+ 
 }
 .category li{
   list-style: none;
@@ -98,11 +104,11 @@ position: absolute;
   display: table;
   width: 300px;
   padding: 10px;
-  background: beige;
+  background: white;
 }
 .category a i {
   transition: all 0.3s ease;
-  margin-bottom: 20%;
+  margin-bottom: 19%;
   font-size: 220%;
 }
  .category a span {
@@ -112,6 +118,9 @@ position: absolute;
   /* ou le menu vertical ouvre pour montrer le nom de chaque categories*/
   .category:hover{
   width: 15%;
+  }
+  .category li:hover{
+    color: orange;
   }
  
 /* partie de sous menu pour chaque categories*/
@@ -123,7 +132,7 @@ position: absolute;
     height: 40%;
     top: 15%;
     left: 15%;
-    background-color: beige;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -135,7 +144,7 @@ position: absolute;
     height: 40%;
     top: 15%;
     left: 15%;
-    background-color:beige;
+    background-color:white;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -148,7 +157,7 @@ position: absolute;
     height: 40%;
     top: 15%;
     left: 15%;
-    background-color: beige;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -159,7 +168,7 @@ position: absolute;
     height: 72%;
     top: 15%;
     left: 15%;
-    background-color: beige;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -173,7 +182,7 @@ position: absolute;
     top: 15%;
     left: 15%;
     cursor: pointer;
-    background-color: beige;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -206,7 +215,7 @@ height: auto;
 
 }
 .row .col-md-4.ssmenu{
-  background-color: beige;
+  background-color: rgb(235, 228, 228);
   border-radius:2%;
   margin: 5% 1% 0% 2%;
   width: 30%;
@@ -238,4 +247,187 @@ text-decoration: underline;
   position: absolute;
   top: 15px;
   left: 1%;
+}
+/*partie de connexion selon clients */
+
+/* partie de login*/
+.login{
+    position: absolute;
+    left: 20%;
+    top: 15%;
+
+  background:  rgba(0, 0, 0, 0.2);
+    width:50%;
+    height: 60%;
+    z-index: 2;
+    display: none;
+}
+.login h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px orangered;
+    color: orange;
+}
+.login form{
+    margin-top: 10%;
+    text-align: center;
+}
+#btnlogin{
+    background-color:orange;
+    cursor: pointer;
+    border: none;
+    width: 25%;
+    margin: 14px 5px;
+    padding: 2%;
+    border-radius: 20px;
+    font-size: 120%;
+    color: white;
+}
+#btnlogin:hover{opacity: 0.7;}
+.login label{
+    position: relative;
+  left: 6%;
+ top: 8px;
+ font-size:100% ;
+ 
+ color: rgba(37, 27, 27, 0.741);
+}
+.login input{
+    border: none;
+    padding:  10px 40px;
+    margin: 1%;
+    width: 30%;
+   font-size: 15px;
+    border-radius: 15px;
+}
+.login p{
+
+   font-family: "popping",sans-serif;
+   text-align: center;
+}
+.login a{
+    text-decoration: none;
+    font-style: italic;
+    color: azure;
+    
+}
+.login a:hover{
+    text-decoration: underline;
+}
+.login p:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* partie de signup*/
+.signup{
+    display: none;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    background: rgba(0, 0, 0, 0.4);
+    width:50%;
+    height: auto;
+    z-index: 2;
+}
+.signup h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px orangered;
+    color: orange;
+}
+.signup form{
+    position: relative;
+    left: 30%;
+  
+}
+.signup input{
+
+    border: none;
+    display: block;
+    padding:  10px 40px;
+    margin: 3% 1%;
+    width: 30%;
+   font-size: 15px;
+    border-radius: 15px;
+}
+.signup p{
+    font-family: "popping",sans-serif;
+   text-align: center;
+  
+}
+.signup p strong{
+    
+    font-style: italic;
+}
+#btnsignup{
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    width: 25%;
+    margin: 14px 5px;
+    padding: 2%;
+    font-size: 120%;
+    border-radius: 20px;
+    position: relative;
+    left: 6%;
+    color: white;
+}
+#btnsignup:hover{
+  opacity: 0.7;
+}
+.signup .btnclose{
+  
+  background: none;
+  border: none;
+  cursor:pointer;
+  font-size: 250%;
+  float: right;
+  margin-right: 2%;
+
+}
+.login .btnclose{
+  
+  background: none;
+  border: none;
+  cursor:pointer;
+  font-size: 250%;
+  float: right;
+  position: relative;
+  top: -18%;
+  margin-right: 2%;
+
+}
+.btnclose:hover{
+  color: beige;
+  opacity: 0.5;
+  
+}
+.signup p:hover {
+   text-decoration: underline; 
+   color: rgb(198, 188, 188);
+}
+.btnback{
+  background: none;
+  border: none;
+  margin: 2%;
+}
+.btnback:hover{
+  color: beige;
+  opacity: 0.5;
+}
+/* animation d'ouverture*/
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
 }
