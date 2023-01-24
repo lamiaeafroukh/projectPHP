@@ -205,29 +205,37 @@ height: auto;
 
 
 }
-
 .row .col-md-4.ssmenu{
-  background-color: azure;
+  background-color: beige;
   border-radius:2%;
   margin: 5% 1% 0% 2%;
   width: 30%;
-   
+  /*shadow des sous menu*/
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  cursor: pointer;
+   transition: transform 0.5;
 }
+/*animation*/
+.row .col-md-4.ssmenu:hover{
+  transform: translateY(-10px);
+}
+
 .row .col-md-4.ssmenu  li {
   list-style: none;
-  
-
+}
+/*decoration des li*/
+.row .col-md-4.ssmenu  li:hover{
+text-decoration: underline;
 }
 .row .col-md-4.ssmenu a{
   text-decoration: none;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  background-color: aquamarine;
-
+  font-family:fantasy;
+  color: black;
   
 }
 #home h2{
   
   position: absolute;
   top: 15px;
-  left: 42%;
+  left: 1%;
 }
