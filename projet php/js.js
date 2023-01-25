@@ -82,3 +82,18 @@ function closedetail(){
 function displaydetail(){
   document.getElementById("pop").style.display="block";
 }
+
+//search function
+const input=document.querySelector('input');
+const prods=document.querySelectorAll('.infoprod');
+input.addEventListener('input',(e)=>{
+  let content=e.target.value;
+  prods.forEach((prod)=>{
+if(prod.textContent.indexOf(content)>=0){
+  prod.style.display="";
+}else{
+  prod.style.display="none";
+
+}
+  })
+})
