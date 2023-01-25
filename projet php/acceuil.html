@@ -362,7 +362,7 @@ function carousel() {
              
               <div class="icons">
               <a href="#" ><span class="fa fa-heart-o" ></span></a>
-              <a href="#" >  <span class="fa fa-shopping-cart"></span></a>
+              <a href="#" onclick="displaydetail()" >  <span class="fa fa-shopping-cart"></span></a>
               <a href="#" ><span class="fas fa-share"></span></a>
             </div></div>
             <div class="infoprod">
@@ -379,7 +379,7 @@ function carousel() {
            
             <div class="icons">
             <a href="#" ><span class="fa fa-heart-o" ></span></a>
-            <a href="#" >  <span class="fa fa-shopping-cart"></span></a>
+            <a href="#" onclick="displaydetail()">  <span class="fa fa-shopping-cart"></span></a>
             <a href="#" ><span class="fas fa-share"></span></a>
           </div></div>
           <div class="infoprod">
@@ -396,7 +396,7 @@ function carousel() {
          
           <div class="icons">
           <a href="#" ><span class="fa fa-heart-o" ></span></a>
-          <a href="#" >  <span class="fa fa-shopping-cart"></span></a>
+          <a href="#" onclick="displaydetail()" >  <span class="fa fa-shopping-cart"></span></a>
           <a href="#" ><span class="fas fa-share"></span></a>
         </div></div>
         <div class="infoprod">
@@ -413,7 +413,7 @@ function carousel() {
          
           <div class="icons">
           <a href="#" ><span class="fa fa-heart-o" ></span></a>
-          <a href="#" >  <span class="fa fa-shopping-cart"></span></a>
+          <a href="#" onclick="displaydetail()"  >  <span class="fa fa-shopping-cart"></span></a>
           <a href="#" ><span class="fas fa-share"></span></a>
         </div></div>
         <div class="infoprod">
@@ -433,7 +433,7 @@ function carousel() {
              
               <div class="icons">
               <a href="#" ><span class="fa fa-heart-o" ></span></a>
-              <a href="#" >  <span class="fa fa-shopping-cart"></span></a>
+              <a href="#" onclick="displaydetail()">  <span class="fa fa-shopping-cart"></span></a>
               <a href="#" ><span class="fas fa-share"></span></a>
             </div></div>
             <div class="infoprod">
@@ -450,7 +450,7 @@ function carousel() {
            
             <div class="icons">
             <a href="#" ><span class="fa fa-heart-o" ></span></a>
-            <a href="#" >  <span class="fa fa-shopping-cart"></span></a>
+            <a href="#" onclick="displaydetail()">  <span class="fa fa-shopping-cart"></span></a>
             <a href="#" ><span class="fas fa-share"></span></a>
           </div></div>
           <div class="infoprod">
@@ -467,7 +467,7 @@ function carousel() {
          
           <div class="icons">
           <a href="#" ><span class="fa fa-heart-o" ></span></a>
-          <a href="#" >  <span class="fa fa-shopping-cart"></span></a>
+          <a href="#" onclick="displaydetail()" >  <span class="fa fa-shopping-cart"></span></a>
           <a href="#" ><span class="fas fa-share"></span></a>
         </div></div>
         <div class="infoprod">
@@ -484,7 +484,7 @@ function carousel() {
          
           <div class="icons">
           <a href="#" ><span class="fa fa-heart-o" ></span></a>
-          <a href="#" >  <span class="fa fa-shopping-cart"></span></a>
+          <a href="#" onclick="displaydetail()" >  <span class="fa fa-shopping-cart"></span></a>
           <a href="#" ><span class="fas fa-share"></span></a>
         </div></div>
         <div class="infoprod">
@@ -500,7 +500,26 @@ function carousel() {
  
   </div>
   
+  <!--partie de details de produits et choix de quantité commandée-->
+<div class="pop" id="pop"><div id="details">
   
+  <div id="im"><img src="Capture d’écran 2023-01-24 145016.png"></div>
+  <div class="right">
+   <button class="close" onclick="closedetail()"> X</button>
+   <div class="info">
+    <h3>Fauteuil gris confortable</h3>
+    <P>size : 3m <br>
+      color : grey <br>
+    </P>
+    <h4>200 Dhs</h4>
+    <div class="quantité"> Quantité :<input type="text" name="" id="quantite"  ></div>
+    <div class="panier">
+       <button >Ajouter Au Panier <span class="fa fa-shopping-cart"></span></button>
+    </div>
+   </div>
+  </div>
+</div></div>
+
 
  
      <div class="login animate"id="login">
