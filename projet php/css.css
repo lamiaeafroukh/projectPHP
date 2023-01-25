@@ -118,6 +118,7 @@ position: absolute;
   /* ou le menu vertical ouvre pour montrer le nom de chaque categories*/
   .category:hover{
   width: 15%;
+  cursor:pointer;
   }
   .category li:hover{
     color: orange;
@@ -125,7 +126,7 @@ position: absolute;
  
 /* partie de sous menu pour chaque categories*/
 #books {
-    cursor: pointer;
+    
     width: 0;
     z-index: 1;
     position:absolute;
@@ -140,7 +141,7 @@ position: absolute;
   #food  {
     width: 0;
     position:absolute;
-    cursor: pointer;
+   
     height: 90%;
     top: 15%;
     left: 15%;
@@ -153,7 +154,7 @@ position: absolute;
   #Vetement {
     width: 0;
     position:absolute;
-    cursor: pointer;
+    
     height: 90%;
     top: 15%;
     left: 15%;
@@ -173,7 +174,7 @@ position: absolute;
     transition: 0.5s;
     padding-top: 60px;
    
-    cursor: pointer;
+    
   }
   #electro {
     width: 0;
@@ -181,7 +182,6 @@ position: absolute;
     height: 90%;
     top: 15%;
     left: 15%;
-    cursor: pointer;
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
@@ -280,6 +280,7 @@ position: relative;
   
 }
 /*partie des sous menus*/
+/* sous menu home */
 .row .col-md-4.ssmenu{
   background-color: white;
   border-radius:2%;
@@ -314,6 +315,155 @@ text-decoration: underline;
   top: 15px;
   left: 1%;
 }
+/* sous menu Electronique */
+#electro h2{
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}
+.electrocol li{
+  list-style: none;
+}
+.electroligne .electrocol  li:hover{
+  text-decoration: underline;
+
+}
+.electroligne  a{
+text-decoration: none;
+font-family:fantasy;
+color: black;
+
+}
+.electrocol {
+  background-color:white;
+  border-radius:4% ;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  width: 35%;
+  display: inline-block;
+  margin: 13px;
+  cursor: pointer;
+  transition: transfom 0.5;
+}
+.electroligne .electrocol:hover{
+  transform: translateY(-10px);
+
+}
+/* sous menu Biblio */
+#books h2{
+  
+  position: absolute;
+  top: 15px;
+  left: 1%;
+}
+#books{
+  position: absolute;
+  left:15%;
+}
+.row .col-md-6.ssmenu{
+  background-color: white;
+  border-radius:2%;
+  margin: 13px;
+  width: 35%;
+ padding-left: 2%;
+ box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+ cursor: pointer;
+  transition: transform 0.5;
+   
+}
+.row .col-md-6.ssmenu  li {
+  list-style: none;
+
+  
+
+}
+.row .col-md-6.ssmenu a{
+  text-decoration: none;
+  font-family:fantasy;
+  background-color: black;
+
+  
+}
+.row .col-md-6.ssmenu ul a{
+  color:black;
+
+}
+.row .col-md-6.ssmenu  li:hover{
+  text-decoration: underline;
+  }
+  .row .col-md-6.ssmenu h4{
+    color: black;
+  }
+  .row .col-md-6.ssmenu:hover{
+    transform: translateY(-10px);
+  }
+  /* sous menu Food */
+  #food h2{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+  }
+  .foodcol li{
+    list-style: none;
+  }
+  .foodligne .foodcol  li:hover{
+    text-decoration: underline;
+  
+  }
+  .foodligne  a{
+  text-decoration: none;
+  font-family:fantasy;
+  color: black;
+
+  }
+  .foodcol {
+    background-color:white;
+    border-radius:4% ;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    width: 35%;
+    display: inline-block;
+    margin: 13px;
+    cursor: pointer;
+    transition: transfom 0.5;
+  }
+  .foodligne .foodcol:hover{
+    transform: translateY(-10px);
+  
+  }
+/* sous menu  Vetements */
+#vetements h2{
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}
+.vetcol li{
+  list-style: none;
+}
+.vetligne .vetcol  li:hover{
+  text-decoration: underline;
+
+}
+.vetligne  a{
+text-decoration: none;
+font-family:fantasy;
+color: black;
+
+}
+.vetcol {
+  background-color:white;
+  border-radius:4% ;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  width: 35%;
+  display: inline-block;
+  margin: 13px;
+  cursor: pointer;
+  transition: transfom 0.5;
+}
+.vetligne .vetcol:hover{
+  transform: translateY(-10px);
+
+}
+
+
 /*partie de connexion selon clients */
 
 /* partie de login*/
