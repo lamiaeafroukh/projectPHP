@@ -75,3 +75,10 @@ function openlogin(){
 function closesign(){
   document.getElementById("signup").style.display="none";
 }
+//fonction de la page de detail produits
+function closedetail(){
+  document.getElementById("pop").style.display="none";
+}
+function displaydetail(){
+  document.getElementById("pop").style.display="block";
+}
