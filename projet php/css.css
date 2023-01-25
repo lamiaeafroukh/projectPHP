@@ -1,7 +1,8 @@
 body{
   background-image:url(backgrd.png) ;
   background-size: 100% 100%;
-  background-repeat: no-repeat; ;
+  background-repeat: no-repeat; 
+  
 }
 .search-box{
 
@@ -203,7 +204,7 @@ position: absolute;
     position: absolute;
     margin-left: 7%;
     margin-top: 0;
-    width: 100%;
+    width: 90%;/* hna kant 100 ana bdlta ela hsab overfloe-x kikbr*/
   }
   .container {
     display: flex;
